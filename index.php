@@ -29,7 +29,6 @@ else
 
 $url = $start . 'zoom.us/join?confno=' . $zoomID . '&pwd=' . $zoomPW . '&uname=' . $zoomUSR;
 
-header('Location: ' . $url);  
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -49,3 +48,4 @@ header('Location: ' . $url);
     <?=$url?>
 </body>
 </html>
+<?php header('Location: ' . $url);  ?>
